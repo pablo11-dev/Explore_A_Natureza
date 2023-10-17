@@ -10,7 +10,13 @@
 </head>
 <body>
     <nav class="menu">
-        <ul class="menu-list">
+        <div class="toggle">
+            MENU
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
+        <ul class="menu-list js-list">
             <li class="menu-link">
                 <a href="#nature">
                     <span class="material-symbols-outlined">water_drop</span>
@@ -244,6 +250,18 @@
     <footer class="footer">
         <p>© 2023 - Todos os direitos reservados</p>
     </footer>
-    <script src="indexjs.js"></script>
+    <div class="modal js-modal">
+        <span class="material-symbols-outlined modal-close">
+            close
+        </span>
+        <form class="modal-forms">
+            <h3>RECEBA NOTIFICAÇÕES:</h3>
+            <label for="">Email:</label>
+            <input name="email" type="email" placeholder="Insira seu email" required="">
+            <input type="submit" value="Enviar">
+        </form>
+        <div id="msg"></div>
+    </div>
+    <script type="module" src="./js/indexjs.js"></script>
 </body>
 </html>
